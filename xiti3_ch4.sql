@@ -11,10 +11,7 @@ SELECT * FROM ViewPractice5_1;
 /* 3.2向习题一中创建的视图 
 ViewPractice5_1 中插入如下数据，会得到什么样的结果？为什么？*/
 INSERT INTO ViewPractice5_1 VALUES (' 刀子 ', 300, '2009-11-02');
-#会报错，为什么不行？
-
-#答案参考的https://blog.csdn.net/wwwrrreeee/article/details/123623070
-#答案是由于当向视图插入数据时,同时也在向原表插入数据,而原表中有6列,
+#会报错，因为向视图插入数据时,同时也在向原表插入数据,而原表中有6列,
 #其中3列不允许为空,插入的数据中not null列的数据为空,所以无法插入
 
 /*3.3 请根据如下结果编写 SELECT 语句，其中 sale_price_avg 列为全部商品的平均销售单价。 */
